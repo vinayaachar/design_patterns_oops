@@ -17,4 +17,17 @@ class Child(Parent):
 
 child = Child('Anna', 'Vinay')
 
-print(child.get_parent())
+# print(child.get_parent())
+
+
+# test args and kwargs
+
+def argsKwargs(*args, **kwargs):
+    for num in args:
+        print(num)
+
+    for key, val in kwargs.items():
+        print(key, val)
+
+
+print(argsKwargs(1, 2, 3, first='vinay', last='rao'))
